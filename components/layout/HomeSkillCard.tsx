@@ -1,5 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 
 interface HomeSkillCardProps {
   title: string;
@@ -10,7 +11,12 @@ interface HomeSkillCardProps {
 
 export default function HomeSkillCard( { title, icon: Icon, description, skills }: HomeSkillCardProps ) {
   return (
-    <>
+      <div
+        className={cn(
+          "group relative overflow-hidden rounded-2xl border border-border/50 bg-card p-6 transition-all duration-300 hover:border-border hover:shadow-lg",
+          "flex flex-col justify-between gap-4",
+        )}
+      >
       <div>
         <div className="mb-4 flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent">
@@ -33,6 +39,6 @@ export default function HomeSkillCard( { title, icon: Icon, description, skills 
           </Badge>
         ))}
       </div>
-    </>
+    </div>
   );
 }
