@@ -36,7 +36,7 @@ const socialMedia = [
 export default function Hero() {
   const yearsOfExperience = new Date().getFullYear() - 2022;
   return (
-    <section className="relative w-full max-w-7xl mx-auto flex flex-col items-start gap-10 overflow-x-clip py-20 md:flex-row md:items-start md:justify-between md:py-28">
+    <section className="relative w-full max-w-7xl mx-auto flex flex-col items-start gap-10 overflow-x-clip md:flex-row md:items-start md:justify-between">
       <div className="flex min-w-0 w-full flex-col items-start justify-center gap-4 md:max-w-xl">
         <HeroChip>Buscando nuevos retos y proyectos</HeroChip>
         <h1 className="text-6xl font-bold">
@@ -89,14 +89,17 @@ export default function Hero() {
       </div>
       {/* Avatar/Photo area */}
       <div className="relative mx-auto w-fit shrink-0 md:mx-0">
-        <div className="relative mr-5 h-64 w-64 overflow-hidden rounded-3xl border border-border/40 bg-gradient-to-br from-primary-foreground/20 via-accent/35 to-primary-foreground/10 shadow-xl shadow-primary/10 ring-1 ring-accent/25 md:h-96 md:w-96 dark:from-primary-foreground/15 dark:via-accent/25 dark:to-primary-foreground/5 dark:shadow-accent/15">
-          <Image
-            src="/images/dcavadia.png"
-            alt="Diego Cavadia — retrato"
-            width={1080}
-            height={1080}
-            priority
-          />
+        <div className="relative mr-5 h-64 w-64 rounded-3xl border border-border/40 bg-gradient-to-br from-primary-foreground/20 via-accent/35 to-primary-foreground/10 shadow-xl shadow-primary/10 ring-1 ring-accent/25 md:h-96 md:w-96 dark:from-primary-foreground/15 dark:via-accent/25 dark:to-primary-foreground/5 dark:shadow-accent/15">
+          <div className="h-full w-full overflow-hidden rounded-3xl">
+            <Image
+              src="/images/dcavadia.png"
+              alt="Diego Cavadia — retrato"
+              width={1080}
+              height={1080}
+              className="h-full w-full object-cover"
+              priority
+            />
+          </div>
         </div>
         {/* Floating badge */}
         <div className="absolute -bottom-4 right-2 rounded-2xl border border-border bg-card px-4 py-2 shadow-lg">

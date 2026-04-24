@@ -13,7 +13,7 @@ export default function HomeSkillCard( { title, icon: Icon, description, skills 
   return (
       <div
         className={cn(
-          "group relative overflow-hidden rounded-2xl border border-border/50 bg-card p-6 transition-all duration-300 hover:border-border hover:shadow-lg",
+          "group relative rounded-2xl border border-border/50 bg-card p-6 transition-all duration-300 hover:border-border hover:shadow-lg",
           "flex flex-col justify-between gap-4",
         )}
       >

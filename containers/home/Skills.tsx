@@ -47,7 +47,7 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section className="relative overflow-hidden w-full max-w-7xl mx-auto flex flex-col justify-center gap-10">
+    <section className="relative w-full max-w-7xl mx-auto flex flex-col justify-center gap-10">
       <div className="flex flex-col items-start justify-center gap-4">
         <h2 className="text-4xl font-bold">Habilidades & Tecnologías</h2>
         <p className="text-muted-foreground">
