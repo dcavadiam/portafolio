@@ -38,7 +38,7 @@ export default function Home() {
             <div className="space-y-4">
               <h1 className="text-balance text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
                 Estoy renovando{" "}
-                <span className="bg-linear-to-r from-primary via-foreground/90 to-accent bg-clip-text text-transparent dark:via-foreground/80">
+                <span className="bg-linear-to-r from-primary via-foreground/90 to-accent-vivid bg-clip-text text-transparent dark:via-foreground/85">
                   mi portafolio
                 </span>
               </h1>
