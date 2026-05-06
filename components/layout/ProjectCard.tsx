@@ -24,7 +24,7 @@ export default function ProjectCard( { title, description, skills, category, ima
             src={image}
             alt={`${title} — vista previa del proyecto`}
             fill
-            loading="lazy"
+            loading="eager"
             sizes={IMAGE_SIZES}
             className="object-cover"
           />
