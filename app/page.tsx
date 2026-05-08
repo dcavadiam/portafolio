@@ -3,14 +3,16 @@ import Skills from "@/containers/home/Skills";
 import Projects from "@/containers/home/Projects";
 import Experience from "@/containers/home/Experience";
 import Freelance from "@/containers/home/Freelance";
+import Form from "@/containers/home/Form";
 export default function Home() {
   return (
     <div className="flex flex-col items-start justify-center gap-20 py-20">
-      <Hero />
+      <Hero />  
       <Skills />
       <Projects />
       <Experience />
       <Freelance />
+      <Form />
     </div>
   );
 }
